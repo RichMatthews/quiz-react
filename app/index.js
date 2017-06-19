@@ -1,11 +1,11 @@
-var express = require('express');
-var app = express();
-var axios = require('axios');
+const express = require('express');
+
+const app = express();
 
 app.use('/', express.static('public'));
 
-app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html');
+app.get('/', (req, res) => {
+  res.sendFile(`${__dirname}/index.html`);
 });
 
 app.listen(process.env.PORT || 8080);

@@ -1,0 +1,29 @@
+.container {
+  background-color: #42f4a1;
+  height: 50px;
+  width: 100%;
+}
+
+.container ul{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.links li a{
+  color: black;
+  text-decoration: none;
+}
+
+.links li a:hover{
+  color: white;
+}
